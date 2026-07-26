@@ -70,9 +70,9 @@ export default function Proposal() {
           <br />
           yang sudah kusampaikan,
           <br />
-          maukah kamu
+          Maukah kamu menjadi pacarku,
           <br />
-          menjadi istriku?
+         dengan niat yang serius?
         </motion.h2>
         {!yes ? (
           <motion.button
