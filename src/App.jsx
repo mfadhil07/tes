@@ -17,15 +17,7 @@ export default function App() {
   const [opened, setOpened] = useState(false);
   const [step, setStep] = useState(0);
 
-  const slides = [
-    Intro,
-    Letter,
-    Meet,
-    Timeline,
-    AboutHer,
-    Future,
-    Proposal,
-  ];
+  const slides = [Intro, Letter, Meet, Timeline, AboutHer, Future, Proposal];
 
   const CurrentSlide = slides[step];
 
@@ -62,12 +54,9 @@ export default function App() {
   }
 
   return (
-    <div
-      {...handlers}
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-rose-50 via-pink-100 to-rose-200"
-    >
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-rose-50 via-pink-100 to-rose-200">
       <ProgressBar current={step + 1} total={slides.length} />
-         <FloatingHearts />
+      <FloatingHearts />
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -103,6 +92,5 @@ export default function App() {
         onNext={() => setStep((prev) => Math.min(prev + 1, slides.length - 1))}
       />
     </div>
-    
   );
 }
