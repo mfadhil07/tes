@@ -13,8 +13,7 @@ export default function Hero({ onOpen }) {
         animate={{ y: [0, -18, 0] }}
         transition={{ repeat: Infinity, duration: 3 }}
         className="absolute top-10"
-      >
-      </motion.div>
+      ></motion.div>
 
       <motion.div
         initial={{
@@ -113,14 +112,10 @@ export default function Hero({ onOpen }) {
         </motion.div>
 
         <motion.button
-          whileHover={{
-            scale: 1.05,
-          }}
-          whileTap={{
-            scale: 0.95,
-          }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           onClick={onOpen}
-          className="mt-12 rounded-full bg-pink-500 px-10 py-4 text-lg font-semibold text-white shadow-xl"
+          className="relative z-10 mt-12 rounded-full bg-pink-500 px-10 py-4 text-lg font-semibold text-white shadow-xl"
         >
           💌 Buka Surat
         </motion.button>
