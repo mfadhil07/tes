@@ -5,15 +5,11 @@ import photo1 from "/images/1.JPG";
 import photo2 from "/images/3.JPG";
 import photo3 from "/images/2.JPG";
 import photo4 from "/images/5.png";
+import photo5 from "/images/6.jpg";
+import photo6 from "/images/7.jpg";
+import photo7 from "/images/8.jpg";
 
 const photos = [
-  {
-    image: photo2,
-    title: "Senyummu",
-    date: "Foto Favoritku",
-    text: "Senyummu selalu punya cara sederhana untuk membuat hariku terasa lebih tenang. Entah kenapa, setiap melihatnya, aku merasa kayak pengen aku cubitt wkwkw.",
-    rotate: "-rotate-6",
-  },
   {
     image: photo1,
     title: "Lembutnya Hatimu",
@@ -22,10 +18,38 @@ const photos = [
     rotate: "rotate-3",
   },
   {
+    image: photo2,
+    title: "Senyummu",
+    date: "Foto Favoritku",
+    text: "Senyummu selalu punya cara sederhana untuk membuat hariku terasa lebih tenang. Entah kenapa, setiap melihatnya, aku merasa kayak pengen aku cubitt wkwkw.",
+    rotate: "-rotate-6",
+  },
+  {
     image: photo3,
-    title: "Cantik Apa Adanya",
+    title: "Sederhana Tapi Indah",
     date: "",
     text: "Kamu tidak perlu berusaha menjadi siapa pun. Kesederhanaanmu sudah cukup membuatmu terlihat begitu cantik di mataku.",
+    rotate: "-rotate-2",
+  },
+  {
+    image: photo6,
+    title: "Detik yang Berharga",
+    date: "",
+    text: "Setiap detik yang kita habiskan bersama adalah momen berharga yang ingin aku simpan selamanya. Aku ingin terus berada di sisimu, menikmati setiap tawa dan cerita yang kita bagi.",
+    rotate: "-rotate-2",
+  },
+  {
+    image: photo7,
+    title: "Lembutnya Hatimu",
+    date: "",
+    text: "Yang membuatku jatuh hati bukan hanya wajahmu, tetapi kelembutan sikapmu. Caramu berbicara, menghargai orang lain, dan memperlakukan semua dengan baik membuatku semakin kagum setiap hari.",
+    rotate: "-rotate-2",
+  },
+  {
+    image: photo5,
+    title: "Harapan dan Doa",
+    date: "",
+    text: "Aku selalu berdoa agar kita bisa terus bersama, saling mendukung, dan mencintai satu sama lain dengan tulus. Semoga setiap langkah kita selalu diberkahi oleh Allah.",
     rotate: "-rotate-2",
   },
   {
@@ -33,7 +57,8 @@ const photos = [
     title: "Anugerah Terindah",
     date: "Foto Terakhir kita bertemu",
     text: "Jika suatu hari Allah mengizinkan aku menjadi imam dalam hidupmu, aku ingin memastikan senyum itu tetap ada, menjagamu dengan sebaik-baiknya, dan mencintaimu karena Allah setiap hari.",
-    rotate: "rotagte-6",
+    rotate: "rotate-6",
+    wide: true,
   },
 ];
 
@@ -41,9 +66,7 @@ export default function Timeline() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-pink-100 via-rose-50 to-white py-20">
       {/* Background Blur */}
-
       <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-pink-300/30 blur-3xl"></div>
-
       <div className="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-rose-300/20 blur-3xl"></div>
 
       <div className="relative mx-auto max-w-6xl px-6">
@@ -90,16 +113,20 @@ export default function Timeline() {
                 delay: index * 0.25,
               }}
               whileHover={{
-                scale: 1.05,
+                scale: 1.02,
                 rotate: 0,
               }}
-              className={`mx-auto w-full max-w-sm ${photo.rotate}`}
+              className={`mx-auto w-full max-w-sm ${photo.rotate} ${
+                photo.wide ? "md:col-span-2 md:max-w-2xl" : ""
+              }`}
             >
               <div className="rounded-xl bg-white p-4 shadow-2xl">
                 <img
                   src={photo.image}
                   alt={photo.title}
-                  className="h-72 w-full rounded-2xl object-cover shadow-md"
+                  className={`w-full rounded-2xl object-cover shadow-md ${
+                    photo.wide ? "h-96" : "h-72"
+                  }`}
                 />
 
                 <div className="mt-5">
