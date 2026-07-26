@@ -42,11 +42,34 @@ export default function Future() {
           transition={{ delay: 0.4 }}
           className="text-center text-2xl leading-10 text-gray-700"
         >
-          Aku tidak menjanjikan hidup yang sempurna.
-          <br />
-          <br />
-          Tapi aku berjanji akan selalu berusaha menjadi seseorang yang bisa
-          membuatmu merasa dicintai, dihargai, dan dijaga.
+         Aku tidak menjanjikan hidup yang sempurna.
+<br />
+<br />
+Tapi aku berjanji akan selalu berusaha menjadi seseorang yang bisa
+membuatmu merasa dicintai, dihargai, dan dijaga.
+<br />
+<br />
+Dan jika kamu benar-benar ingin melangkah bersamaku, aku ingin kita
+menjalani proses ini dengan keseriusan.
+<br />
+<br />
+Mulai dari sekarang sampai hari Lebaran nanti, aku ingin kita tetap
+menjaga komunikasi, saling mengenal lebih dalam, dan membangun
+kepercayaan satu sama lain.
+<br />
+<br />
+InsyaAllah setelah Lebaran, jika Allah memberikan jalan dan kita sama-sama
+yakin, aku ingin datang dengan niat yang lebih serius untuk melamarmu.
+<br />
+<br />
+Untuk langkah selanjutnya, tentang kapan kita menikah, biarlah menjadi
+keputusan yang kita bicarakan bersama dengan keluarga kita masing-masing.
+Karena aku ingin hubungan ini bukan hanya tentang kita berdua, tapi juga
+tentang menyatukan dua keluarga dengan cara yang baik dan penuh berkah.
+<br />
+<br />
+Semoga Allah memudahkan setiap langkah kita, jika memang kamu adalah
+orang yang Allah pilih untuk menjadi teman hidupku. ❤️
         </motion.p>
 
         {/* Footer Love */}
