@@ -32,7 +32,7 @@ const photos = [
     rotate: "-rotate-2",
   },
   {
-    image: photo6,
+    image: photo5,
     title: "Detik yang Berharga",
     date: "",
     text: "Setiap detik yang kita habiskan bersama adalah momen berharga yang ingin aku simpan selamanya. Aku ingin terus berada di sisimu, menikmati setiap tawa dan cerita yang kita bagi.",
@@ -46,7 +46,7 @@ const photos = [
     rotate: "-rotate-2",
   },
   {
-    image: photo5,
+    image: photo6,
     title: "Harapan dan Doa",
     date: "",
     text: "Aku selalu berdoa agar kita bisa terus bersama, saling mendukung, dan mencintai satu sama lain dengan tulus. Semoga setiap langkah kita selalu diberkahi oleh Allah.",
